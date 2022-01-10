@@ -1,12 +1,12 @@
-class Desert:
-    def init(self, name=None, calories=None):
+class Dessert:
+    def __init__(self, name=None, calories=None):
         self.name = name
         self.calories = calories
 
-    def get_desert(self):
+    def get_dessert(self):
         return self.name, self.calories
 
-    def set_desert(self, name, calories):
+    def set_dessert(self, name, calories):
         self.name = name
         self.calories = calories
 
@@ -19,10 +19,9 @@ class Desert:
     def is_delicious(self):
         return True
 
-
-class JellyBean(Desert):
-    def init(self, flavor=None):
-        super(JellyBean, self).init()
+class JellyBean(Dessert):
+    def __init__(self, name, calories, flavor=None):
+        super().__init__(name, calories)
         self.flavor = flavor
 
     def is_delicious(self):
@@ -30,3 +29,7 @@ class JellyBean(Desert):
             return False
         else:
             return True
+
+#dessert1 = JellyBean(name='Milk', calories=199, flavor='black licorice')
+#print(dessert1.name, dessert1.calories, dessert1.flavor)
+#print(dessert1.is_delicious())

@@ -1,12 +1,12 @@
-class Desert:
-    def init(self, name=None, calories=None):
+class Dessert:
+    def __init__(self, name=None, calories=None):
         self.name = name
         self.calories = calories
 
-    def get_desert(self):
+    def get_dessert(self):
         return self.name, self.calories
 
-    def set_desert(self, name, calories):
+    def set_dessert(self, name, calories):
         self.name = name
         self.calories = calories
 
@@ -20,9 +20,7 @@ class Desert:
         return True
 
 
-desert = Desert()
-
-desert.set_desert(name='Pie', calories=205)
-print(desert.name, desert.calories)
-print(desert.is_healthy())
-print(desert.is_delicious())
+#dessert = Dessert(name='Pie', calories=220)
+#print(dessert.name, dessert.calories)
+#print(dessert.is_healthy())
+#print(dessert.is_delicious())
