@@ -27,7 +27,7 @@ class Dessert:
     def is_delicious(self):
         return True
 
-#dessert = Dessert(name='Pie', calories=199)
+#dessert = Dessert(name='Pie', calories='170')
 #print(dessert.name, dessert.calories)
 #print(dessert.is_healthy())
 #print(dessert.is_delicious())

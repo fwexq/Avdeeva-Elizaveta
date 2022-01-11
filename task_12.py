@@ -3,11 +3,16 @@ class Dessert:
         self.name = name
         self.calories = calories
 
-    def get_dessert(self):
-        return self.name, self.calories
+    def get_name(self):
+        return self.name
 
-    def set_dessert(self, name, calories):
+    def get_calories(self):
+        return self.calories
+
+    def set_name(self, name):
         self.name = name
+
+    def set_calories(self,calories):
         self.calories = calories
 
     def is_healthy(self):
