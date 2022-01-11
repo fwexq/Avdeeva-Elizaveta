@@ -1,5 +1,5 @@
 class Dessert:
-    def __init__(self, name=None, calories=None):
+    def __init__(self, name='', calories=0):
         self.name = name
         self.calories = calories
 
@@ -16,8 +16,11 @@ class Dessert:
         self.calories = calories
 
     def is_healthy(self):
-        if self.calories < 200:
-            return True
+        if isinstance(self.calories, int):
+            if self.calories < 200:
+                return True
+            else:
+                return False
         else:
             return False
 
